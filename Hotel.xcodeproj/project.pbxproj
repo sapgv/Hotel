@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		10F60A482B3991BB0054851B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60A472B3991BB0054851B /* AppDelegate.swift */; };
 		10F60A4A2B3991BB0054851B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60A492B3991BB0054851B /* SceneDelegate.swift */; };
-		10F60A4C2B3991BB0054851B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60A4B2B3991BB0054851B /* ViewController.swift */; };
+		10F60A4C2B3991BB0054851B /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60A4B2B3991BB0054851B /* HotelViewController.swift */; };
 		10F60A4F2B3991BB0054851B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F60A4D2B3991BB0054851B /* Main.storyboard */; };
 		10F60A512B3991BE0054851B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10F60A502B3991BE0054851B /* Assets.xcassets */; };
 		10F60A542B3991BE0054851B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F60A522B3991BE0054851B /* LaunchScreen.storyboard */; };
+		10F60A5E2B3994430054851B /* NavigationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60A5D2B3994430054851B /* NavigationItemView.swift */; };
+		10F60A612B3997310054851B /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60A602B3997310054851B /* Hotel.swift */; };
+		10F60A642B3998960054851B /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60A632B3998960054851B /* Api.swift */; };
+		10F60A672B399B0A0054851B /* HotelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60A662B399B0A0054851B /* HotelViewModel.swift */; };
+		10F60A6A2B399B1E0054851B /* HotelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60A692B399B1E0054851B /* HotelService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10F60A442B3991BB0054851B /* Hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F60A472B3991BB0054851B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10F60A492B3991BB0054851B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10F60A4B2B3991BB0054851B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10F60A4B2B3991BB0054851B /* HotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
 		10F60A4E2B3991BB0054851B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10F60A502B3991BE0054851B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10F60A532B3991BE0054851B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10F60A552B3991BE0054851B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10F60A5D2B3994430054851B /* NavigationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemView.swift; sourceTree = "<group>"; };
+		10F60A602B3997310054851B /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		10F60A632B3998960054851B /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		10F60A662B399B0A0054851B /* HotelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewModel.swift; sourceTree = "<group>"; };
+		10F60A692B399B1E0054851B /* HotelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		10F60A462B3991BB0054851B /* Hotel */ = {
 			isa = PBXGroup;
 			children = (
+				10F60A682B399B120054851B /* Service */,
+				10F60A5B2B3992130054851B /* Supporting Files */,
+				10F60A652B399AFF0054851B /* HotelViewController */,
+				10F60A622B39988F0054851B /* Api */,
+				10F60A5F2B3997260054851B /* Model */,
+				10F60A5C2B3994000054851B /* View */,
+			);
+			path = Hotel;
+			sourceTree = "<group>";
+		};
+		10F60A5B2B3992130054851B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				10F60A472B3991BB0054851B /* AppDelegate.swift */,
 				10F60A492B3991BB0054851B /* SceneDelegate.swift */,
-				10F60A4B2B3991BB0054851B /* ViewController.swift */,
 				10F60A4D2B3991BB0054851B /* Main.storyboard */,
 				10F60A502B3991BE0054851B /* Assets.xcassets */,
 				10F60A522B3991BE0054851B /* LaunchScreen.storyboard */,
 				10F60A552B3991BE0054851B /* Info.plist */,
 			);
-			path = Hotel;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10F60A5C2B3994000054851B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10F60A5D2B3994430054851B /* NavigationItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		10F60A5F2B3997260054851B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10F60A602B3997310054851B /* Hotel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10F60A622B39988F0054851B /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				10F60A632B3998960054851B /* Api.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		10F60A652B399AFF0054851B /* HotelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10F60A662B399B0A0054851B /* HotelViewModel.swift */,
+				10F60A4B2B3991BB0054851B /* HotelViewController.swift */,
+			);
+			path = HotelViewController;
+			sourceTree = "<group>";
+		};
+		10F60A682B399B120054851B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				10F60A692B399B1E0054851B /* HotelService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10F60A4C2B3991BB0054851B /* ViewController.swift in Sources */,
+				10F60A642B3998960054851B /* Api.swift in Sources */,
+				10F60A612B3997310054851B /* Hotel.swift in Sources */,
+				10F60A6A2B399B1E0054851B /* HotelService.swift in Sources */,
+				10F60A4C2B3991BB0054851B /* HotelViewController.swift in Sources */,
+				10F60A5E2B3994430054851B /* NavigationItemView.swift in Sources */,
 				10F60A482B3991BB0054851B /* AppDelegate.swift in Sources */,
+				10F60A672B399B0A0054851B /* HotelViewModel.swift in Sources */,
 				10F60A4A2B3991BB0054851B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KTV28US9SX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Hotel/Info.plist;
+				INFOPLIST_FILE = "Hotel/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KTV28US9SX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Hotel/Info.plist;
+				INFOPLIST_FILE = "Hotel/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
