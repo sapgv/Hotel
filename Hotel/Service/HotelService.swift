@@ -21,7 +21,7 @@ final class HotelService {
     
     func fetchHotel(completion: @escaping (Swift.Result<Hotel, Error>) -> Void) {
      
-        self.api.fetchHotel { [weak self] result in
+        self.api.fetchHotel { result in
             
             switch result {
             case let .failure(error):
@@ -32,7 +32,11 @@ final class HotelService {
                     
                     let hotel = Hotel(data: json)
                     
-                    self?.updateHotelImage(hotel: hotel, completion: completion)
+                    DispatchQueue.main.async {
+                        
+                        completion(.success(hotel))
+                        
+                    }
                     
                 }
                 

@@ -19,7 +19,7 @@ final class Hotel {
     
     let priceForIt: String
     
-    let rating: Decimal
+    let rating: Int
     
     let ratingName: String
     
@@ -37,7 +37,7 @@ final class Hotel {
         self.address = data["address"] as? String ?? ""
         self.minimalPrice = data["minimal_price"] as? Decimal ?? 0
         self.priceForIt = data["price_for_it"] as? String ?? ""
-        self.rating = data["rating"] as? Decimal ?? 0
+        self.rating = data["rating"] as? Int ?? 0
         self.ratingName = data["rating_name"] as? String ?? ""
         self.imageUrls = data["image_urls"] as? [String] ?? []
         
